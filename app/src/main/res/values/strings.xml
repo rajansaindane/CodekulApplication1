@@ -2,4 +2,5 @@
     <string name="app_name">CodekulApplication</string>
     <string name="click">click</string>
     <string name="technology">Technology</string>
+    <string name="play">Play</string>
 </resources>

@@ -39,9 +39,11 @@ public class TopicActivity extends AppCompatActivity {
 
     private void get(){
 
-        webservices.q(this).add(new StringRequest("http://api.icndb.com/jokes/random/3",this::OnJoke,this::OnJokeError));
 
+        webservices.q(this).add(new StringRequest
+                ("http://192.168.2.35:7878/codekul/technology/getList",this::OnJoke,this::OnJokeError));
 
+       // "http://api.icndb.com/jokes/random/3"
     }
 
     private void OnJokeError(VolleyError volleyError) {
@@ -58,13 +60,14 @@ public class TopicActivity extends AppCompatActivity {
         joke jok=gson.fromJson(s, com.example.rajan.codekulapplication.joke.class);
         updatejoke(jok);
 
+
     }
 
     private void updatejoke(joke jok){
         ArrayList<String> jokes=new ArrayList<>();
         for(jokeinfo info : jok.getValue()){
 
-            jokes.add(info.getJoke());
+            jokes.add(info.getTechnologyName());
         }
 
 

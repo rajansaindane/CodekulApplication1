@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class jokeinfo {
 
     private String id;
-    private String joke;
+    private String technologyName;
     private ArrayList<String> categories;
 
     public String getId() {
@@ -20,12 +20,12 @@ public class jokeinfo {
         this.id = id;
     }
 
-    public String getJoke() {
-        return joke;
+    public String getTechnologyName() {
+        return technologyName;
     }
 
-    public void setJoke(String joke) {
-        this.joke = joke;
+    public void setTechnologyName(String technologyName) {
+        this.technologyName = technologyName;
     }
 
     public ArrayList<String> getCategories() {
@@ -35,4 +35,5 @@ public class jokeinfo {
     public void setCategories(ArrayList<String> categories) {
         this.categories = categories;
     }
+
 }

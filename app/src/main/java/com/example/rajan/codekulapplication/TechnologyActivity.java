@@ -35,8 +35,8 @@ public class TechnologyActivity extends AppCompatActivity {
 
     private void get1(){
 
-        webservices1.q(this).add(new StringRequest("http://api.icndb.com/jokes/random/4",this::OnJoke1,this::OnJokeError1));
-
+        webservices1.q(this).add(new StringRequest
+                ("http://192.168.2.35:7878/codekul/technology/getList",this::OnJoke1,this::OnJokeError1));
 
     }
 
@@ -60,7 +60,7 @@ public class TechnologyActivity extends AppCompatActivity {
         ArrayList<String> jokes=new ArrayList<>();
         for(jokeinfo info: jok.getValue()){
 
-            jokes.add(info.getJoke());
+            jokes.add(info.getTechnologyName());
         }
 
 
@@ -69,25 +69,25 @@ public class TechnologyActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,jokes);
         ListView list=((ListView)findViewById(R.id.listtechnology));
         list.setAdapter(adapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-
-
-                if(position == 0){
-
-                    Intent webvideo=new Intent(TechnologyActivity.this,TopicVideoActivity.class);
-
-                    startActivity(webvideo);
-
-
-
-                }
-
-
-
-            }
-        });
+//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+//
+//
+//                if(position == 0){
+//
+//                    Intent webvideo=new Intent(TechnologyActivity.this,TopicVideoActivity.class);
+//
+//                    startActivity(webvideo);
+//
+//
+//
+//                }
+//
+//
+//
+//            }
+//        });
 
     }
 
