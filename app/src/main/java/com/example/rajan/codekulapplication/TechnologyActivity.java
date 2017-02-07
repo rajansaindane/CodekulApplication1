@@ -58,7 +58,7 @@ public class TechnologyActivity extends AppCompatActivity {
 
     private void updatejoke(joke jok){
         ArrayList<String> jokes=new ArrayList<>();
-        for(jokeinfo info: jok.getValue()){
+        for(jokeinfo info: jok.getTechnology()){
 
             jokes.add(info.getTechnologyName());
         }

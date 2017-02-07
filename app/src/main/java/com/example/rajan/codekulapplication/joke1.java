@@ -8,22 +8,22 @@ import java.util.ArrayList;
 
 public class joke1 {
 
-    private String type;
-    private ArrayList<jokeinfo> value;
+    private String status;
+    private ArrayList<jokeinfo> technology;
 
-    public String getType() {
-        return type;
+    public String getStatus() {
+        return status;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public ArrayList<jokeinfo> getValue() {
-        return value;
+    public ArrayList<jokeinfo> getTechnology() {
+        return technology;
     }
 
-    public void setValue(ArrayList<jokeinfo> value) {
-        this.value = value;
+    public void setTechnology(ArrayList<jokeinfo> technology) {
+        this.technology = technology;
     }
 }
