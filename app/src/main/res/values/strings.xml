@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">CodekulApplication</string>
+    <string name="app_name">Codio</string>
     <string name="click">click</string>
     <string name="technology">Technology</string>
     <string name="play">Play</string>
+    <string name="mobile">{ Mobole };</string>
 </resources>
