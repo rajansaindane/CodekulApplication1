@@ -10,10 +10,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TopicActivity"></activity>
-        <activity android:name=".CoursesActivity">
-
-        </activity>
+        <activity android:name=".TopicActivity" />
+        <activity android:name=".CoursesActivity" />
         <activity android:name=".FirstScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +19,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WebActivity" />
+        <activity android:name=".DataBaseActivity" />
+        <activity android:name=".SoftwareTestingActivity" />
+        <activity android:name=".CoreFrameworkActivity" />
+        <activity android:name=".AndroidTopicList" />
+        <activity android:name=".IosTopicList" />
+        <activity android:name=".UnityTopicList" />
+        <activity android:name=".HTML5TopicList" />
+        <activity android:name=".CSS3TopicList" />
+        <activity android:name=".JavaScriptTopicList" />
+        <activity android:name=".PHPTopicList" />
+        <activity android:name=".JqueryTopicList" />
+        <activity android:name=".BootstrapTopicList" />
+        <activity android:name=".HadoopTopicList" />
+        <activity android:name=".OracleTopicList" />
+        <activity android:name=".PostgresTopicList" />
+        <activity android:name=".MySqlTopicList" />
+        <activity android:name=".PLSqlTopicList" />
+        <activity android:name=".MongoDBTopicList" />
+        <activity android:name=".SQLiteTopicList" />
+        <activity android:name=".ManualTestingTopicList" />
+        <activity android:name=".AutomationTestingTopicList" />
+        <activity android:name=".MobileTestingTopicList" />
+        <activity android:name=".CTopicList" />
+        <activity android:name=".CppTopicList" />
+        <activity android:name=".CSharpTopicList" />
+        <activity android:name=".JavaTopicList" />
+        <activity android:name=".StringTopicList" />
+        <activity android:name=".HibernateTopicList" />
+        <activity android:name=".StrutsTopicList" />
+        <activity android:name=".AngularJsTopicList"></activity>
     </application>
 
 </manifest>
